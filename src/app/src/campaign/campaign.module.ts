@@ -16,15 +16,18 @@ const campaignRoutes: Routes = [
       },
       {
         path: AppRoutes.campaignHome,
-        loadChildren: () => import('./campaign-home/campaign-home.module')
+        loadChildren: () => import('./campaign-home/campaign-home.module'),
+        title:'Campaign Home'
       },
       {
         path: AppRoutes.campaignDetails,
-        loadChildren: () => import('./campaign-details/campaign-details.module')
+        loadChildren: () => import('./campaign-details/campaign-details.module'),
+        title:'Campaign Details'
       },
       {
         path: AppRoutes.campaignList,
-        loadChildren: () => import('./campaign-list/campaign-list.module')
+        loadChildren: () => import('./campaign-list/campaign-list.module'),
+        title:'Campaign List'
       }
     ]
   }]

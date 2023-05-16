@@ -12,7 +12,8 @@ const routes: Routes = [{
     },
     {
       path: AppRoutes.login,
-      loadChildren: () => import('../app/src/login/login.module')
+      loadChildren: () => import('../app/src/login/login.module'),
+      title:'Login'
     },
     {
       path: AppRoutes.campaign,
@@ -20,11 +21,13 @@ const routes: Routes = [{
     },
     {
       path: AppRoutes.keywordList,
-      loadChildren: () => import('../app/src/keyword-list/keyword-list.module')
+      loadChildren: () => import('../app/src/keyword-list/keyword-list.module'),
+      title:'Keyword List'
     },
     {
       path: AppRoutes.products,
-      loadChildren: () => import('../app/src/products/products.module')
+      loadChildren: () => import('../app/src/products/products.module'),
+      title:'Products'
     },
     ]
 }];
