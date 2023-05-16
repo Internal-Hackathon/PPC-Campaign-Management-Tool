@@ -17,5 +17,5 @@ import {AppHeaderContModule} from "../../../components/app-header/container/app-
     ])
   ]
 })
-export class LoginModule {
+export default class LoginModule {
 }

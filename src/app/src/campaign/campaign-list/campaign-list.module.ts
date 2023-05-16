@@ -14,4 +14,4 @@ import {RouterModule} from "@angular/router";
     ])
   ]
 })
-export class CampaignListModule { }
+export default class CampaignListModule { }
