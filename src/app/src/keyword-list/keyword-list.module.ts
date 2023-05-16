@@ -16,4 +16,4 @@ import {RouterModule} from "@angular/router";
     ])
   ]
 })
-export class KeywordListModule { }
+export default class KeywordListModule { }

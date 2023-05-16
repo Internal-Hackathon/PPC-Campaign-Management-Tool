@@ -15,5 +15,5 @@ import {RouterModule} from "@angular/router";
     ])
   ]
 })
-export class ProductsModule {
+export default class ProductsModule {
 }
