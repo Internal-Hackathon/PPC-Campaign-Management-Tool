@@ -3,6 +3,7 @@ import {CommonModule} from '@angular/common';
 import {LoginComponent} from "./login.component";
 import {RouterModule} from "@angular/router";
 import {AppHeaderContModule} from "../../../components/app-header/container/app-header-cont/app-header-cont.module";
+import { LoginContModule } from '../../../components/login/container/login-cont/login-cont.module';
 
 
 @NgModule({
@@ -12,6 +13,7 @@ import {AppHeaderContModule} from "../../../components/app-header/container/app-
   imports: [
     CommonModule,
     AppHeaderContModule,
+    LoginContModule,
     RouterModule.forChild([
       {path: '', component: LoginComponent}
     ])
