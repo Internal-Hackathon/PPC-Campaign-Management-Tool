@@ -1,0 +1,20 @@
+<img class="auth-icon" src="../../../../assets/icons/auth-icon.svg" alt="" />
+<div class="login-container" [formGroup]="authForm">
+    <mat-form-field appearance="fill">
+        <mat-label>Enter your username</mat-label>
+        <input matInput placeholder="eg. eylemgokdemir" formControlName="username">
+        <!-- <mat-error *ngIf="username.invalid">{{getUsernameError()}}</mat-error> -->
+    </mat-form-field>
+    <mat-form-field appearance="fill">
+        <mat-label>Enter your password</mat-label>
+        <input matInput placeholder="eg. strong password" formControlName="password">
+        <!-- <mat-error *ngIf="password.invalid">{{getPasswordError()}}</mat-error> -->
+    </mat-form-field>
+    <section class="remember-section">
+        <mat-checkbox class="remember-margin" [(ngModel)]="checked">Remember me</mat-checkbox>
+        <a mat-flat-button href="" target="_blank">Forgot password</a>
+    </section>
+    <div class="login-button-row">
+        <button mat-raised-button color="primary">Login</button>
+    </div>
+</div>

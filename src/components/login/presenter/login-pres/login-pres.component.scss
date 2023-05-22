@@ -1,0 +1,27 @@
+.login-container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1rem;
+
+    .remember-section {
+        font-size: .7rem;
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 1rem;
+
+        .remember-margin {
+            margin-top: -0.8rem;
+            margin-left: -0.6rem;
+        }
+    }
+
+    .login-button-row {
+        button {
+            width: 100%;
+            background-color: dodgerblue;
+            color: white;
+            border-color: dodgerblue;
+            border-radius: 3px;
+        }
+    }
+}
